@@ -1,0 +1,274 @@
+[
+  {
+    "id": "manter-dados-de-usuario-através-da-api",
+    "uri": "features/specifications/users.feature",
+    "keyword": "Funcionalidade",
+    "name": "Manter dados de Usuario através da API",
+    "description": "Como um usuário do sistema\nEu quero realizar as requisições na API\nA fim de manipular as informações do Cadastro de Usuario",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@users",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "manter-dados-de-usuario-através-da-api;cadastrar-um-usuario",
+        "keyword": "Cenário",
+        "name": "Cadastrar um usuario",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "o endereço da API para manter o cadastro de usuario",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21100
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar uma requisição para cadastrar um usuario",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237516200
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a API irá retornar os dados do cadastro de usuario respondendo o código 201",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "\nexpected: 201\n     got: 401\n\n(compared using ==)\n (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/users_steps.rb:11:in `\"a API irá retornar os dados do cadastro de usuario respondendo o código {int}\"'\nfeatures/specifications/users.feature:11:in `a API irá retornar os dados do cadastro de usuario respondendo o código 201'",
+              "duration": 24119800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/hooks/users_hook.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26100
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-dados-de-usuario-através-da-api;consultar-um-usuario",
+        "keyword": "Cenário",
+        "name": "Consultar um usuario",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "o endereço da API para manter o cadastro de usuario",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23500
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar uma requisição passando o ID do usuario",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239182900
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a API irá retornar os dados do usuario correspondente respondendo o código 200",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:30"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `code' for nil:NilClass (NoMethodError)\n./features/step_definitions/users_steps.rb:31:in `\"a API irá retornar os dados do usuario correspondente respondendo o código {int}\"'\nfeatures/specifications/users.feature:16:in `a API irá retornar os dados do usuario correspondente respondendo o código 200'",
+              "duration": 96800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/hooks/users_hook.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19700
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-dados-de-usuario-através-da-api;alterar-um-usuario",
+        "keyword": "Cenário",
+        "name": "Alterar um usuario",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "o endereço da API para manter o cadastro de usuario",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11600
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar uma requisição para alterar um usuario",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224669400
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a API irá retornar os dados do usuario alterados respondendo o código 200",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:47"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `code' for nil:NilClass (NoMethodError)\n./features/step_definitions/users_steps.rb:48:in `\"a API irá retornar os dados do usuario alterados respondendo o código {int}\"'\nfeatures/specifications/users.feature:21:in `a API irá retornar os dados do usuario alterados respondendo o código 200'",
+              "duration": 104800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/hooks/users_hook.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13700
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-dados-de-usuario-através-da-api;deletar-um-usuario",
+        "keyword": "Cenário",
+        "name": "Deletar um usuario",
+        "description": "",
+        "line": 23,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "o endereço da API para manter o cadastro de usuario",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12300
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar uma requisição para excluir um usuario",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229364900
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a API deverá retornar os dados da exclusão respondendo o código 200",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/users_steps.rb:64"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `code' for nil:NilClass (NoMethodError)\n./features/step_definitions/users_steps.rb:65:in `\"a API deverá retornar os dados da exclusão respondendo o código {int}\"'\nfeatures/specifications/users.feature:26:in `a API deverá retornar os dados da exclusão respondendo o código 200'",
+              "duration": 124500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/hooks/users_hook.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15300
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

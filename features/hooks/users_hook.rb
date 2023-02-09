@@ -5,6 +5,7 @@ Before '@users' do
     @email = "teste@teste.com"
     @status = "active"
 
+
     @body = {
         "name": @name, 
         "gender":  @gender, 
